@@ -1,7 +1,8 @@
 {
   "dependencies": {
     "fastify": "^1.12.1",
-    "pg": "^7.5.0"
+    "pg": "^7.5.0",
+    "fastify-cors":"^0.2.0"
   },
   "devDependencies": {
     "nodemon": "^1.18.4"
