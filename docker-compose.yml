@@ -1,0 +1,17 @@
+version: '3'
+services:
+  postgres:
+    image: 'postgres:latest'
+  api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile.dev
+    volumes:
+      - /app/node_modules
+      - ./api:/app
+    environment:
+      PG_USER: postgres
+      PG_HOST: postgres
+      PG_DATABASE: postgres
+      PG_PORT: 5432
+      PG_PASSWORD: postgres_password

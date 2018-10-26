@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "fastify": "^1.12.1",
+    "pg": "^7.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  },
+  "scripts": {
+    "nodemon": "node ./node_modules/nodemon/bin/nodemon.js index.js"
+  }
+}
